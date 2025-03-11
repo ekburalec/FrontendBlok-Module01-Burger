@@ -1,4 +1,110 @@
+:root {
+    --font-family-base: "Open Sans", sans-serif;
+    --font-family-second: "Nunito Sans", sans-serif;
+
+    --accent-light: #fbb731;
+    --accent-dark: #f37335;
+    --light: #ffffff;
+    --dark: #443737;
+}
+
 body {
-    font-family: "Open Sans", sans-serif;
-    /* font-family: "Nunito Sans", sans-serif; */
+    font-family: var(--font-family-base);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+    background-color: var(--light);
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 174px 1fr 80px;
+    align-items: center;
+    gap: 196px;
+    padding: 26px 0;
+}
+
+.loog {
+    display: block;
+    width: 175px;
+    height: 56px;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-family: var(--font-family-second);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: transparent;
+}
+
+.nav-link:hover::after {
+    background-color: var(--accent-light);
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family-second);
+    font-weight: 700;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.cart::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 26px;
+    background-image: url('../images/icons/cart.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cart-counter {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    background-color: var(--accent-dark);
+    font-size: 10px;
+    color: var(--light);
+    border-radius: 100%;
 }
