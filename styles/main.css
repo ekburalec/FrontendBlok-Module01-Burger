@@ -200,7 +200,6 @@ body {
     min-height: 438px;
     color: rgba(var(--light-rgb), .8);
     padding: 140px 40px 100px;
-    color: var(--light);
 }
 
 .banner-wrapper {
@@ -238,7 +237,6 @@ body {
 
 .banner-desc {
     margin: 0 0 15px;
-    color: rgba(var(--light-rgb), 0.8);
 }
 
 .bunner-btn {
