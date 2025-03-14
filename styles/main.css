@@ -19,7 +19,7 @@ img{
     max-width: 100%;
     height: auto;
     object-fit: contain;
-  }
+}
 
 
 body {
@@ -28,6 +28,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     background-color: var(--light);
+    color: var(--dark);
     margin: 0;
 }
 
@@ -239,7 +240,9 @@ body {
     margin: 0 0 15px;
 }
 
-.bunner-btn {
+.bunner-btn,
+.menu-btn {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,4 +264,101 @@ body {
     text-align: center;
     color: #443737;
     background-color: #fbb731;
+}
+
+/* Menu */
+section {
+    padding: 0 0 100px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 34px;
+}
+
+.menu-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #443737;
+    margin: 0;
+}
+
+.select {
+    width: 279px;
+    min-height: 44px;
+    font-family: var(--font-family-second);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+    border: 1px solid #dedede;
+    border-radius: 22px;
+    padding: 10px 50px 10px 30px;
+    appearance: none;
+    cursor: pointer;
+
+    background-image: url("../images/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    background-size: 13px 9px;
+}
+
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    list-style-type: none;
+    min-height: 580px;
+}
+
+.menu-list li img {
+    height: 430px;
+    display: block;
+    margin: 0 0 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.menu-list li h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 5px;
+}
+
+.menu-list li p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgba(68, 55, 55, 0.5);
+    margin: 0 0 20px;
+}
+
+.menu-btn::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background: url("../images/icons/cart-dark.svg") center center no-repeat;
+}   
+
+.menu-title-additionally {
+    margin: 0 0 34px;
 }
