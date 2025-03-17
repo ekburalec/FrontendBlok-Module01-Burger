@@ -43,7 +43,7 @@ body {
 /* header */
 
 .header {
-    border: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
 }
 
 .header-wrapper{
@@ -272,10 +272,6 @@ main {
     padding:  0 0 140px;
 }
 
-section:not(:last-child) {
-    padding: 0 0 100px;
-}
-
 .menu-header {
     display: flex;
     justify-content: space-between;
@@ -363,6 +359,10 @@ section:not(:last-child) {
     margin-right: 10px;
     background: url("../images/icons/cart-dark.svg") center center no-repeat;
 }   
+
+.additionally {
+    padding: 100px 0 0;
+}
 
 .menu-title-additionally {
     margin: 0 0 34px;
