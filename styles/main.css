@@ -104,6 +104,7 @@ body {
     font-weight: 700;
     color: var(--dark);
     text-decoration: none;
+    transition: .2s ease-in;
 }
 
 .cart:hover {
@@ -265,6 +266,12 @@ body {
     text-align: center;
     color: #443737;
     background-color: #fbb731;
+    transition: .2s ease-in;
+}
+
+.bunner-btn:hover,
+.menu-btn:hover {
+    background-color: var(--accent-dark);
 }
 
 /* Menu */
@@ -383,8 +390,12 @@ main {
     gap: 134px;
 }
 
-.footer-wrapper a:hover {
-    color: var(--accent-dark);
+.footer-list-menu a{
+    transition: .2s ease-in;
+}
+
+.footer-list-menu a:hover {
+    color: var(--accent-light);
 }
 
 .logo-footer {
@@ -447,6 +458,7 @@ main {
     line-height: 1.9;
     text-transform: uppercase;
     color: #fbb731;
+    transition: .2s ease-in;
 }
 
 .footer-list-menu {
@@ -464,4 +476,8 @@ main {
 .footer-list-phone {
     min-width: 194px;
     padding: 0;
+}
+
+.footer-wrapper .phone:hover {
+    color: var(--light);
 }
