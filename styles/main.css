@@ -50,7 +50,7 @@ body {
     display: grid;
     grid-template-columns: 174px 1fr 80px;
     align-items: center;
-    gap: 198px;
+    gap: 56px;
     padding: 26px 0;
 }
 
@@ -62,6 +62,7 @@ body {
 
 .nav {
     flex-grow: 1;
+    margin-left: min(10vw, 140px);
 }
 
 .nav-list {
@@ -622,4 +623,40 @@ main {
 
 .contact-tel:hover {
     color: var(--accent-light);
+}
+
+/* media */
+@media (max-width: 1080px) {
+    
+    .header-wrapper {
+        gap: 40px;
+    }
+
+    .nav {
+        margin-left: 0;
+        gap: min(3vw, 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        gap: 45px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 47px;
+    }
+
+    .nav {
+        gap: 22px;
+    }
+
+    .banner {
+        padding: 72px 0 80px;
+    }
+    
+    .banner-wrapper {
+        padding: 100px 40px;
+    }
 }
